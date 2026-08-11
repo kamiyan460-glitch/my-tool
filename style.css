@@ -1,0 +1,135 @@
+:root {
+  --bg: #0f172a;
+  --bg-alt: #111827;
+  --accent: #6366f1;
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.nav-cta {
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid var(--text-muted);
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s;
+}
+
+.nav-cta:hover {
+  border-color: var(--accent);
+}
+
+.hero {
+  background: radial-gradient(circle at top, #1e293b, var(--bg) 70%);
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 6rem 2rem 8rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.cta {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.9rem 2.25rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.35);
+}
+
+.features {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.feature {
+  background: var(--bg-alt);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+}
+
+.feature h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.feature p {
+  color: var(--text-muted);
+}
+
+.get-started {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: var(--bg-alt);
+}
+
+.get-started h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.get-started p {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
